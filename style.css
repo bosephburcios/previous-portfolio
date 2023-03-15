@@ -176,7 +176,7 @@ nav ul li a:hover::after {
 	text-align: center;
 }
 #about-section {
-	background-color: #bfc6c7;
+	background-color: #c4c4c4;
 	padding: 50px;
 	min-height:100vh;
 }
@@ -189,7 +189,7 @@ nav ul li a:hover::after {
 	padding:50px;
 	padding-bottom: 80px;
 	min-height:100vh;
-	background-color: #5c5f68;
+	background-color: #303030;
 }
 #ed-img {
     height:350px;
@@ -302,4 +302,69 @@ ul {
 #copyright {
 	color: #8d8d8d;
 	font-size:14px;
+}
+
+/*--------CSS for smaller devices--------*/
+nav .fas {
+	display: none;
+}
+@media only screen and (max-width: 600px) {
+	.title {
+		width: 100%;
+		font-size: 250%;
+		margin-top: 20px;
+	}
+	nav .fas {
+		display: block;
+		font-size: 25px;
+	}
+	nav ul {
+		background: #323232;
+		position: fixed;
+		top: 0;
+		right: -200px;
+		width: 200px;
+		height: 100vh;
+		padding-top: 50px;
+		z-index: 2;
+		transition: right 0.5s;
+	}
+	nav ul li {
+		display: block;
+		margin: 25px;
+	}
+	nav ul li a {
+		color: #fff;
+	}
+	nav ul .fas {
+		position: absolute;
+		top: 25px;
+		left: 25px;
+		cursor: pointer;
+	}
+	.subtitle {
+		font-size: 20px;
+	}
+	.text {
+		font-size: 16px;
+		margin: 20px;
+	}
+	.img-console h3 {
+		flex-basis: 100%;
+		margin: 20px;
+		font-size: 14px;
+	}
+	h2 {
+		font-size: 16px;
+	}
+	#logo-img {
+		height: 80px;
+		width: 90px;
+	}
+	#extra {
+		margin-top: 20px;
+		margin-left: 35px;
+		font-size: 14px;
+		align-items: center;
+	}
 }
