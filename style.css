@@ -305,14 +305,28 @@ ul {
 }
 
 /*--------CSS for smaller devices--------*/
+#mobile-img {
+	display:none;
+}
+
 nav .fas {
 	display: none;
 }
 @media only screen and (max-width: 600px) {
+	#home-section {
+		margin-bottom: 20px;
+	}
+	#mobile-img{
+		display: block;
+		align-content: center;
+		max-width: 300px;
+		max-height: 300px;
+	}
 	.title {
 		width: 100%;
 		font-size: 250%;
 		margin-top: 20px;
+		align-content: center;
 	}
 	nav .fas {
 		display: block;
@@ -348,11 +362,11 @@ nav .fas {
 	.text {
 		font-size: 16px;
 		margin: 20px;
-	}
-	.img-console h3 {
+	}	
+	#img-console h3 {
 		flex-basis: 100%;
 		margin: 20px;
-		font-size: 14px;
+		font-size: 15px;
 	}
 	h2 {
 		font-size: 16px;
