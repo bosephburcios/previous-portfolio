@@ -86,7 +86,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #fadbfc;
+    background: #608572;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -100,14 +100,21 @@ nav ul li a:hover::after {
 /* --------Home--------*/
 #home-section {
     height: 100vh;
+	width:  100vw;
     display: flex; 
     align-items: center; 
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
-    background-image: url(Images/background.jpeg);
-    background-size: cover;
-    background-position: center;
+	background-color: #FCFCFC;
+}
+#mobile-img {
+	display: block;
+	align-content: center;
+	max-height: 1000px;
+	max-width: 1000px;
+	position: absolute;
+	top: 150px
 }
 #landing-container {
     padding-right: 4%;
@@ -121,6 +128,12 @@ nav ul li a:hover::after {
     font-size: 350%;
     margin-top: 5%;
     margin-bottom: 2%;
+	position: absolute;
+	bottom: 135px;
+}
+.small-text {
+	position: absolute;
+	bottom: 135px;
 }
 .subtitle {
     letter-spacing: 1px;
@@ -139,6 +152,8 @@ nav ul li a:hover::after {
     transition: 0.3s;
     animation: bounce 3s infinite;
     margin: 20px;
+	position: absolute;
+	bottom: 65px;
 }
 .arrow:hover {
     opacity: 60%;
@@ -176,9 +191,23 @@ nav ul li a:hover::after {
 	text-align: center;
 }
 #about-section {
-	background-color: #c4c4c4;
+	background-color: #f3efef;
 	padding: 50px;
 	min-height:100vh;
+}
+#sax {
+	position: absolute;
+	height: 120px;
+	width: 60px;
+	top: 875px;
+	right: 145px;
+}
+#note {
+	position: absolute;
+	height: 70px;
+	width: 50px;
+	top: 850px;
+	right: 75px;
 }
 #text .subtitle {
 	margin-bottom:40px;
@@ -191,7 +220,7 @@ nav ul li a:hover::after {
 	min-height:100vh;
 	background-color: #303030;
 }
-#ed-img {
+#ed-img, #ed3-img{
     height:350px;
     border-radius: 10px;
     box-shadow: 12px 12px 1px #fadbfc;
@@ -272,7 +301,7 @@ ul {
 	 transition: height 0.5s;
 }
 .layer h3 {
-	font-weight: 500;
+	font-weight: 700;
 	margin-bottom: 20px;
 }
 .project:hover img {
@@ -305,28 +334,36 @@ ul {
 }
 
 /*--------CSS for smaller devices--------*/
-#mobile-img {
-	display:none;
-}
-
 nav .fas {
 	display: none;
 }
 @media only screen and (max-width: 600px) {
+
 	#home-section {
 		margin-bottom: 20px;
+		text-align: center;
 	}
 	#mobile-img{
 		display: block;
 		align-content: center;
-		max-width: 300px;
-		max-height: 300px;
+		max-width: 450px;
+		max-height: 450px;
+		position: absolute;
+		right: 1%;
 	}
 	.title {
 		width: 100%;
 		font-size: 250%;
-		margin-top: 20px;
+		margin-top: 40px;
+		bottom: 200px;
 		align-content: center;
+		right: 1%;
+	}
+	.small-text {
+		bottom: 175px;
+	}
+	.arrow {
+		bottom: 100px;
 	}
 	nav .fas {
 		display: block;
@@ -338,7 +375,7 @@ nav .fas {
 		top: 0;
 		right: -200px;
 		width: 200px;
-		height: 100vh;
+		height: 100%;
 		padding-top: 50px;
 		z-index: 2;
 		transition: right 0.5s;
@@ -375,10 +412,16 @@ nav .fas {
 		height: 80px;
 		width: 90px;
 	}
+	#ed3-img {
+		display: none;
+	}
 	#extra {
 		margin-top: 20px;
 		margin-left: 35px;
 		font-size: 14px;
 		align-items: center;
+	}
+	#note, #sax {
+		display: none;
 	}
 }
